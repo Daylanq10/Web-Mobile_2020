@@ -1,2 +1,3 @@
 # Web-Mobile_2020
- Tasks completed for web-mobile programming class
+ This repository contains tasks completed for a web-mobile programming class 2020
+
