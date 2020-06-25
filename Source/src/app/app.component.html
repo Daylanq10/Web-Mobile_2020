@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Calculator</title>
+  // 1. write Typescript code in "app.component.ts" to work with ToDo list
+</head>
+<body>
+<div class="row mt-1" style="height:80px;">
+  <div class="col-3 d-none col-md-3 d-md-block"></div>
+  <div class="col-12 col-md-6 bg-danger d-flex justify-content-center align-items-center text-light">
+    <div class="big">To-Do List</div>
+  </div>
+</div>
+
+<div class="row mt-1" style="height:80px;">
+  <div class="col-3 d-none col-md-3 d-md-block"></div>
+  <div class="col-12 col-md-6 d-flex justify-content-center align-items-center text-light h3">
+
+    <input [(ngModel)]="newTask" type="text " value="Enter here" class="col-7 form-control" style="width:300px;">
+    <div class="col-1"></div>
+
+    <button (click)="addToList()"
+            class="btn btn-light text-danger">
+      Add Task
+    </button>
+
+  </div>
+  <div class="col-3 d-non col-md-3 d-md-block"></div>
+</div>
+<div *ngFor="let x of items; let index = index;"
+     class="row mt-1" style="height:100px;">
+
+  <div class="col-3 d-none col-md-3 d-md-block"></div>
+  <div class="col-12 col-md-6 bg-secondary d-flex justify-content-center align-items-center text-light h3">
+
+    <div class="col-9 text-light h3">{{x}}</div>
+    <input (click)="deleteTask(index)" type="button" value="Delete"
+           class="col-2 btn btn-danger">
+
+  </div>
+  <div class="col-3 d-none col-md-3 d-md-block"></div>
+</div>
+
+<div class="row mt-1" style="height:80px;">
+  <div class="col-3 d-none col-md-3 d-md-block"></div>
+  <div class="col-12 col-md-6 d-flex justify-content-center align-items-center text-light">
+      <h3>name: </h3>
+    <input [(ngModel)]="reason" type="text" value="Enter here" class="col-2 form-control" style="width:100px;">
+     <h3>days: </h3>
+    <input [(ngModel)]="day" type="text" value="Enter here" class="col-2 form-control" style="width:50px;">
+    <h3>hours: </h3>
+    <input [(ngModel)]="hour" type="text" value="Enter here" class="col-2 form-control" style="width:50px;">
+  </div>
+</div>
+  <div class="row mt-1" style="height:80px;">
+    <div class="col-3 d-none col-md-3 d-md-block"></div>
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center text-light">
+
+    <h3>minutes: </h3>
+    <input [(ngModel)]="minute" type="text" value="Enter here" class="col-2 form-control" style="width:50px;">
+    <h3>seconds: </h3>
+    <input [(ngModel)]="second" type="text" value="Enter here" class="col-2 form-control" style="width:50px;">
+    <div class="col-1"></div>
+    <button (click)="timer()" type="button" value="date"
+            class="btn btn-light text-danger">
+            Start
+    </button>
+    </div>
+  </div>
+  <div class="col-3 d-non col-md-3 d-md-block"></div>
+
+<div class="row mt-1" style="height:80px;">
+  <div class="col-3 d-none col-md-3 d-md-block"></div>
+  <div class="col-12 col-md-6 bg-danger d-flex justify-content-center align-items-center text-light">
+    <div class="big">{{reason}}</div>
+  </div>
+</div>
+
+<div class="row mt-2" style="height:100px;">
+  <div class="col-3 d-none col-md-3 d-md-block"></div>
+  <div class="col-12 col-md-6 bg-danger d-flex justify-content-center align-items-center text-light">
+    <div><h3>{{day}} days, {{hour}} hours, {{minute}} minutes, and {{second}} seconds</h3></div>
+  </div>
+</div>
+
+
+</body>
+</html>
