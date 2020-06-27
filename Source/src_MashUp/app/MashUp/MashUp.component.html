@@ -1,0 +1,32 @@
+<body>
+
+<div class="parent-container">
+  <div class="child-container">
+    <h2><b>Search for your recipe!!
+    </b></h2><br>
+    <form>
+      <div class="form-group">
+        <div class="form-group col-lg-6 col-lg-offset-3 input-group">
+          <input #recipe class="form-control" placeholder="Recipe name" type="text">
+          <span class="input-group-addon">-</span>
+          <input #place class="form-control" placeholder="Place" type="text">
+          <span class="input-group-addon">-</span>
+
+        </div>
+        <br>
+        <button (click)="getVenues()" class="btn btn primary col-lg-2 col-lg-offset-5 " type="button">Go</button>
+
+      </div>
+    </form>
+  </div>
+</div><br><br>
+
+<div class="row mt-1" style="height:80px;">
+  <div class="col-3 d-none col-md-3 d-md-block"></div>
+  <div class="col-12 col-md-6 bg-danger d-flex justify-content-center align-items-center text-light">
+    In the end I could not figure out how to extract what I needed from the JSON
+  </div>
+</div>
+
+{{myJSON}}
+</body>
