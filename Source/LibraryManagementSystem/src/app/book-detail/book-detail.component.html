@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Book Library</title>
+</head>
+<body>
+<div class="row mt-1" style="height:80px;">
+  <div class="col-3 d-none col-md-3 d-md-block"></div>
+  <div class="col-12 col-md-6 bg-primary d-flex justify-content-center align-items-center text-light">
+    <div class="big">Book Details</div>
+  </div>
+</div>
+<div class="button-row">
+  <a mat-raised-button color="primary" [routerLink]="['/books']"><mat-icon>list</mat-icon></a>
+</div>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title><h2>{{book.title}}</h2></mat-card-title>
+    <mat-card-subtitle>{{book.description}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <dl>
+      <dt>ISBN:</dt>
+      <dd>{{book.isbn}}</dd>
+      <dt>Author:</dt>
+      <dd>{{book.author}}</dd>
+      <dt>Publisher:</dt>
+      <dd>{{book.publisher}}</dd>
+      <dt>Publish Year:</dt>
+      <dd>{{book.published_year}}</dd>
+      <dt>Update Date:</dt>
+      <dd>{{book.updated_date | date}}</dd>
+    </dl>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-raised-button color="primary" [routerLink]="['/book-edit', book._id]"><mat-icon>edit</mat-icon></a>
+    <a mat-raised-button color="warn" (click)="deleteBook(book._id)"><mat-icon>delete</mat-icon></a>
+  </mat-card-actions>
+</mat-card>

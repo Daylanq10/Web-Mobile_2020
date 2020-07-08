@@ -1,0 +1,14 @@
+.example-card {
+  max-width: 500px;
+}
+
+.button-row {
+  margin: 10px 0;
+  background-color: aqua;
+}
+
+.big {
+  font-family: "Times New Roman";
+  color: black;
+  font-size: 80px;
+}
