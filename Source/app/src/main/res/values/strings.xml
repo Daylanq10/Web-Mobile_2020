@@ -1,3 +1,37 @@
-<resources>
-    <string name="app_name">Login-App</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">My Order</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="toppings">Toppings</string>
+    <string name="ham">Ham</string>
+    <string name="bacon">Bacon</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="sausage">Sausage</string>
+    <string name="quantity">Quantity</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="spinach">Spinach</string>
+    <string name="initial_quantity_value">1</string>
+    <string name="order">Order</string>
+    <string name="order_summary_name">Name:<xliff:g example="Vijaya" id="name">%s</xliff:g></string>
+    <string name="order_summary_email">Email:<xliff:g example="Vijaya@hotmail.com" id="email">%s</xliff:g></string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="order_summary_ham">Add ham? <xliff:g example="yes" id="addham">%s</xliff:g></string>
+    <string name="order_summary_bacon">Add bacon? <xliff:g example="yes" id="addbacon">%s</xliff:g></string>
+    <string name="order_summary_pepperoni">Add pepperoni? <xliff:g example="yes" id="addpepperoni">%s</xliff:g></string>
+    <string name="order_summary_sausage">Add sausage? <xliff:g example="yes" id="addsausage">%s</xliff:g></string>
+    <string name="order_summary_pineapple">Add pineapple? <xliff:g example="yes" id="addpineapple">%s</xliff:g></string>
+    <string name="order_summary_spinach">Add spinach? <xliff:g example="yes" id="addspinach">%s</xliff:g></string>
+    <string name="order_summary_quantity">Quantity: <xliff:g example="2" id="quantity">%d</xliff:g></string>
+    <string name="order_summary_total_price">Total: $ <xliff:g example="10" id="price">%.2f</xliff:g></string>
+    <string name="thank_you">Thank you!</string>
+    <string name="too_much_coffee">Please select less than one hundred cups of coffee</string>
+    <string name="too_little_coffee">Please select atleast one cup of coffee</string>
+    <string name="list_name">ListView</string>
+    <string-array name="array">
+        <item>MY NAME: Daylan Quinn</item>
+        <item>PIZZAS: 3</item>
+        <item>TOPPINGS: PINEAPPLE, HAM</item>
+        <item>TOTAL: $28</item>
+    </string-array>
 </resources>
