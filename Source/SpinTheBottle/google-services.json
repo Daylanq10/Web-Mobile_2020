@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "885356252147",
+    "firebase_url": "https://spin-the-bottle-75807.firebaseio.com",
+    "project_id": "spin-the-bottle-75807",
+    "storage_bucket": "spin-the-bottle-75807.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885356252147:android:2c46989a014b38fed2e086",
+        "android_client_info": {
+          "package_name": "com.example.spinthebottle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885356252147-5c2vaqifdu7jf1lg5damjr8c0oou8ck4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrb5Lhg-3WVimJ8qL-sroF5h-fVQBsvCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885356252147-5c2vaqifdu7jf1lg5damjr8c0oou8ck4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
